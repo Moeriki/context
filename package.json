@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "lint": "eslint --cache --fix '**.{js,ts,tsx}'",
+    "lint:code": "eslint --cache --fix '**.{js,ts,tsx}'",
+    "lint:style": "stylelint --fix '**/*.css'",
+    "lint": "yarn lint:code && yarn lint:style",
     "storybook": "start-storybook --ci --port 6006",
     "build-storybook": "build-storybook"
   },
@@ -37,6 +39,9 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
     "react-docgen-typescript-loader": "^3.6.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-recommended": "^3.0.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
     "typescript-plugin-css-modules": "^2.1.2"
