@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "lint": "eslint --cache --fix '**.{js,ts,tsx}'"
+    "lint": "eslint --cache --fix '**.{js,ts,tsx}'",
+    "storybook": "start-storybook --ci --port 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/react": "^5.3.13",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.8.0",
     "eslint-config-noise": "^0.0.28",
     "eslint-config-noise-browser": "^0.0.28",
@@ -25,6 +29,8 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-unicorn": "^16.1.1",
     "prettier": "^1.19.1",
+    "react-docgen-typescript-loader": "^3.6.0",
+    "ts-loader": "^6.2.1",
     "typescript": "^3.7.5"
   },
   "prettier": {
