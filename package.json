@@ -36,6 +36,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-unicorn": "^16.1.1",
     "postcss": "^7.0.26",
+    "postcss-normalize": "^8.0.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
     "react-docgen-typescript-loader": "^3.6.0",
