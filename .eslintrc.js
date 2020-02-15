@@ -14,5 +14,11 @@ module.exports = {
       files: ['**.{ts,tsx}'],
       extends: ['noise-ts'],
     },
+    {
+      files: ['.storybook/**', '*.js', '**/*.stories.tsx'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
   ],
 };
