@@ -1,5 +1,7 @@
 @import-normalize;
 
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
 html {
   box-sizing: border-box;
   font-family:
