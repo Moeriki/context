@@ -9,6 +9,9 @@ module.exports = {
     {
       files: ['**.{jsx,tsx}'],
       extends: ['noise-react'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
+      },
     },
     {
       files: ['**.{ts,tsx}'],

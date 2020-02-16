@@ -1,8 +1,8 @@
 .card {
-  width: 350px;
-  height: 350px;
   padding: 0.75em;
   font-family: 'Merriweather', serif;
   font-size: 36px;
+  background-color: silver;
   border: 1px solid black;
+  border-radius: 5px;
 }

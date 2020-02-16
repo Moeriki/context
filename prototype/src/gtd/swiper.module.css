@@ -1,0 +1,9 @@
+.viewContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardContainer {
+  width: 350px;
+  height: 350px;
+}
