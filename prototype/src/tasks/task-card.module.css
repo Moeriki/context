@@ -1,8 +1,14 @@
 .card {
+  height: 100%;
   padding: 0.75em;
   font-family: 'Merriweather', serif;
   font-size: 36px;
+  user-select: none;
   background-color: silver;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.card:hover {
+  cursor: grab;
 }

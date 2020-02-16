@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100vh;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -22,5 +23,6 @@ html * {
 }
 
 body {
+  height: 100vh;
   margin: 0
 }

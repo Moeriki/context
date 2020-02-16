@@ -21,12 +21,14 @@ export default function Swiper({ task }: SwiperProperties): ReactElement {
   });
 
   return (
-    <div className={styles.viewContainer}>
-      <div className={styles.cardContainer}>
-        <animated.div {...bind()} style={{ x, y }}>
-          <TaskCard task={activeTask} />
-        </animated.div>
-      </div>
+    <div className={styles.swiperContainer}>
+      <animated.div
+        className={styles.swiperCardContainer}
+        style={{ x, y }}
+        {...bind()}
+      >
+        <TaskCard task={activeTask} />
+      </animated.div>
     </div>
   );
 }
