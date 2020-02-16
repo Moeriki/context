@@ -15,16 +15,16 @@ export default function Swiper({ task }: SwiperProperties): ReactElement {
     setActiveTask(activeTask);
   }
 
-  const [{ x, y }, set] = useSpring(() => ({ x: 0, y: 0 }));
-  const bind = useDrag(({ down, movement: [mx, my] }) => {
-    set({ x: down ? mx : 0, y: down ? my : 0 });
+  const [{ x }, set] = useSpring(() => ({ x: 0 }));
+  const bind = useDrag(({ down, movement: [mx] }) => {
+    set({ x: down ? mx : 0 });
   });
 
   return (
     <div className={styles.swiperContainer}>
       <animated.div
         className={styles.swiperCardContainer}
-        style={{ x, y }}
+        style={{ x }}
         {...bind()}
       >
         <TaskCard task={activeTask} />
