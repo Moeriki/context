@@ -8,5 +8,14 @@ interface TaskCardProperties {
 }
 
 export default function TaskCard({ task }: TaskCardProperties): ReactElement {
-  return <div className={styles.card}>{task.description}</div>;
+  return (
+    <div className={styles.card}>
+      <div className={styles.cardDescription}>{task.description}</div>
+      <div className={styles.cardActions}>
+        <button className={styles.cardActionCompleteTaskButton} type="button">
+          Complete
+        </button>
+      </div>
+    </div>
+  );
 }
