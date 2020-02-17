@@ -1,6 +1,7 @@
 .gtdViewContainer {
   display: flex;
   justify-content: space-around;
+  perspective: 1000px;
 }
 
 .cardWrapper {

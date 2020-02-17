@@ -1703,6 +1703,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash@^4.14.149":
+  version "4.14.149"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.149.tgz#1342d63d948c6062838fbf961012f74d4e638440"
+  integrity sha512-ijGqzZt/b7BfzcK9vTrS6MFljQRPn5BFWOx8oE0GYxribu6uV+aA9zZuXI1zc/etK9E8nrgdoF2+LgUw7+9tJQ==
+
 "@types/minimist@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
@@ -4625,25 +4630,25 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-noise-browser@^0.0.28:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/eslint-config-noise-browser/-/eslint-config-noise-browser-0.0.28.tgz#c89345555900fd7f85ba2b1c06dee58aad212aeb"
-  integrity sha512-xc2R8fhW98yw9JiR1cbU0u++KmYd8AaPDmI8Yl0e+UCitDHOkPTC/TLtz69s581zxeSyhywxkimvxsB/YC0lQw==
+eslint-config-noise-browser@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/eslint-config-noise-browser/-/eslint-config-noise-browser-0.0.29.tgz#015888443525684294fc7a7944a2bdf5a4ef1c6e"
+  integrity sha512-oEn374qXyIhhEeJC3jFxbfQ1jDsxiO9zuAXEyhaNFIHAjABFd/6rkdUPGd3Lqm26mJ3ronijwm7hxMEUvAXX+w==
 
-eslint-config-noise-react@^0.0.28:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/eslint-config-noise-react/-/eslint-config-noise-react-0.0.28.tgz#090567896de04686c9a03b6fccf7433ce4f31bbb"
-  integrity sha512-wZlNXSkP564X8LEIGBobJe2RsAgr7zaksD1SkUBTLXCoV9q2Ev4dfX81gKsylIDbN50TEe7j/scnX2Vn9ZnlWw==
+eslint-config-noise-react@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/eslint-config-noise-react/-/eslint-config-noise-react-0.0.29.tgz#5fa9c2e891b2de3329a762ea61dbbfa091fece13"
+  integrity sha512-hKZIy7eysRFXd2rLrD3SF48YCvZB0ttx9s6/dsx2m5hoiG1NbrBeah0iWBcd3qf8LdazanNGZM28PiLipALPCg==
 
-eslint-config-noise-ts@^0.0.28:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/eslint-config-noise-ts/-/eslint-config-noise-ts-0.0.28.tgz#8aa15068351e52a0e644203b7f00ec8b39905ade"
-  integrity sha512-Hp1JzHYajsiSaBSQ2ChVaDJgmI3faxFO0KyiUKsLO4GvJDSumUcW+d7FwUwts8l1zbI0RoPoyID+haJjmohL8w==
+eslint-config-noise-ts@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/eslint-config-noise-ts/-/eslint-config-noise-ts-0.0.29.tgz#5bec29c9453741a8ba2c5f0ff356bb263784eefe"
+  integrity sha512-CB/M3EVUNoWRZkM772uvYXirTOceuyPZq/ajBNY0jb5k069cld/G30UhXLuxWKbOJ09B4XICQtYpcTns503BTQ==
 
-eslint-config-noise@^0.0.28:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/eslint-config-noise/-/eslint-config-noise-0.0.28.tgz#876f81bb9b670e819336dfd35e77019f536d39c9"
-  integrity sha512-I/6YIExAg2izwGBMhZi0+5c3++I+w/IVX+xIcrbOGb00JIN+8ICTKarPQQGJE8bFub+2NQqDkfFI5uiKmKMA8w==
+eslint-config-noise@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/eslint-config-noise/-/eslint-config-noise-0.0.29.tgz#2fd27b62c2141d859b7b34f7a8853ecbdc24c4f7"
+  integrity sha512-B/Q3Rrs2EJ4zmKLi376eOMoqCRSf23iVvMf+td0otk7hRRc8VfRfC2nw/g8PYcRIoz7OYke2JGJySo00MHFB6w==
   dependencies:
     confusing-browser-globals "^1.0.9"
     lodash "^4.17.15"
