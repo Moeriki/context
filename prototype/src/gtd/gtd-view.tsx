@@ -32,28 +32,31 @@ export default function GtdView({ task }: GtdViewProperties): ReactElement {
 
   return (
     <div className={styles.gtdViewContainer}>
-      <animated.div
-        className={styles.cardWrapper}
-        style={{
-          rotateY: x.interpolate(
-            (v) => `${clamp(0, X_BOUND_RIGHT, v) * X_TO_ANGLE}deg`,
-          ),
-          x,
-        }}
-        {...bind()}
-      >
-        <div className={styles.card}>
-          <div className={styles.cardDescription}>{task.description}</div>
-          <div className={styles.cardActions}>
-            <button
-              className={styles.cardActionCompleteTaskButton}
-              type="button"
-            >
-              Complete
-            </button>
+      <div className={styles.gtdStack}>
+        <div className={styles.gtdComplete}>√</div>
+        <animated.div
+          {...bind()}
+          className={styles.gtdCard}
+          style={{
+            rotateY: x
+              .interpolate(clamp(0, X_BOUND_RIGHT))
+              .interpolate((v) => `${v * X_TO_ANGLE}deg`),
+            x,
+          }}
+        >
+          <div className={styles.card}>
+            <div className={styles.cardDescription}>{task.description}</div>
+            <div className={styles.cardActions}>
+              <button
+                className={styles.cardActionCompleteTaskButton}
+                type="button"
+              >
+                Complete
+              </button>
+            </div>
           </div>
-        </div>
-      </animated.div>
+        </animated.div>
+      </div>
     </div>
   );
 }

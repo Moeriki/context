@@ -1,12 +1,30 @@
 .gtdViewContainer {
   display: flex;
   justify-content: space-around;
+}
+
+.gtdStack {
+  position: relative;
+  width: 350px;
+  height: 350px;
   perspective: 1000px;
 }
 
-.cardWrapper {
-  width: 350px;
-  height: 350px;
+.gtdStack > * {
+  position: absolute;
+}
+
+.gtdCard {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.gtdComplete {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .card {
