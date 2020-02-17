@@ -1,9 +1,0 @@
-.swiperContainer {
-  display: flex;
-  justify-content: space-around;
-}
-
-.swiperCardContainer {
-  width: 350px;
-  height: 350px;
-}

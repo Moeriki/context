@@ -1,0 +1,6 @@
+.mainViewContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 100%;
+}
