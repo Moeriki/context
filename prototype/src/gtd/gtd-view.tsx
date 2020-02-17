@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from 'react';
 import { animated, useSpring } from 'react-spring';
 import { useDrag } from 'react-use-gesture';
 
-import { Task, TaskCard } from '../tasks';
+import { Task } from '../tasks';
 import * as styles from './gtd-view.module.css';
 
 interface GtdViewProperties {
@@ -21,13 +21,19 @@ export default function GtdView({ task }: GtdViewProperties): ReactElement {
   });
 
   return (
-    <div className={styles.swiperContainer}>
-      <animated.div
-        className={styles.swiperCardContainer}
-        style={{ x }}
-        {...bind()}
-      >
-        <TaskCard task={activeTask} />
+    <div className={styles.gtdViewContainer}>
+      <animated.div className={styles.cardWrapper} style={{ x }} {...bind()}>
+        <div className={styles.card}>
+          <div className={styles.cardDescription}>{task.description}</div>
+          <div className={styles.cardActions}>
+            <button
+              className={styles.cardActionCompleteTaskButton}
+              type="button"
+            >
+              Complete
+            </button>
+          </div>
+        </div>
       </animated.div>
     </div>
   );
